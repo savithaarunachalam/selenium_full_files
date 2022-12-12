@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="mybrowser" value="chrome"/>
+  <test name="Test1">
+    <classes>
+      <class name="DataDriven1.Parallel"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <classes>
+      <class name="DataDriven1.Parallel"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="DataDriven1.Parallel">
+        <methods>
+          <include name="test"/>
+          <include name="test"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- DataDriven1.Parallel -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="DataDriven1.Parallel">
+        <methods>
+          <include name="test"/>
+          <include name="test"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- DataDriven1.Parallel -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-08T06:19:47Z" name="Default suite" finished-at="2022-11-08T06:19:47Z" duration-ms="49">
+    <groups>
+    </groups>
+    <test started-at="2022-11-08T06:19:47Z" name="Default test" finished-at="2022-11-08T06:19:47Z" duration-ms="49">
+      <class name="DataDriven1.Parallel">
+        <test-method is-config="true" signature="test(java.lang.String)[pri:0, instance:DataDriven1.Parallel@6f19ac19]" started-at="2022-11-08T11:49:47Z" name="test" finished-at="2022-11-08T11:49:47Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'mybrowser' is required by @Configuration on method test but has not been marked @Optional or defined
+in C:\Users\arunk\AppData\Local\Temp\testng-eclipse-1792123632\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'mybrowser' is required by @Configuration on method test but has not been marked @Optional or defined
+in C:\Users\arunk\AppData\Local\Temp\testng-eclipse-1792123632\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:DataDriven1.Parallel@6f19ac19]" started-at="2022-11-08T11:49:47Z" name="test" finished-at="2022-11-08T11:49:47Z" duration-ms="8" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- DataDriven1.Parallel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
